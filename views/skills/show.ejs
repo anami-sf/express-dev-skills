@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Developer Skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Developer Skills</h1>
+    <!-- List skills -->
+    <ul>
+    <% skills.forEach((skill,idx) => {%>
+        <li>     
+            <a href="/skills/<%= idx %>"><%= skill.language %></a>
+        </li>
+
+    <% }); %>
+  </ul>
+  </body>
+</html>
