@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Developer Skills</title>
+      <!-- skill#new -->
+    <title>Add Skill</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
         <h1>Add Skill</h1>
         <!-- action= path -->
-        <!-- <form action="/todos/new" method="POST" autocomplete="off">
-            <input type="text" name="todo" value="<%= skill.lang%>">
+        <!-- We will collect data from /skills/new and post to /skills -->
+        <form action="/skills" method="POST" autocomplete="off">
+          <!-- The names must map exactly to model attributes -->
+            <input type="text" name="language" >
+            <input type="text" name="description" >
+            <input type="number" name="level" >
             <button type="submit">Update Todo</button>
-        </form> -->
+        </form>
   </body>
 </html>
 

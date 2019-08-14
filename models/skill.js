@@ -30,5 +30,6 @@ const getOne = (id) => {
 
 module.exports = {
     getAll,
-    getOne
+    getOne,
+    show
 }

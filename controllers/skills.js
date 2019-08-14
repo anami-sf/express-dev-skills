@@ -9,7 +9,7 @@ const index = (req, res) => {
 }
 
 const newSkill = (req, res) => {
-    res.render('todos/new');
+    res.render('skills/new');
   }
 
 const show = (req, res) => {
