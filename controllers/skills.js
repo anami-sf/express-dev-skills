@@ -9,7 +9,7 @@ const index = (req, res) => {
 }
 
 const show = (req, res) => {
-    res.render('todos/show', {
+    res.render('skills/show', {
         skill: Skill.getOne(req.params.id),
         skillNum: parseInt(req.params.id) + 1
     })
