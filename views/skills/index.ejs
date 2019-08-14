@@ -9,8 +9,7 @@
     <!-- List skills -->
     <ul>
     <% skills.forEach((skill,idx) => {%>
-        <li><%= skill.language %></li>
-
+      <a href="/skills/<%= idx %>"><%= skill.language %></a>
     <% }); %>
   </ul>
   </body>

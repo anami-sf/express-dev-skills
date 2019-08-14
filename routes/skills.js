@@ -6,11 +6,12 @@ var skillsCtl = require('../controllers/skills')
 // cb = skillsCtl.index
 router.get('/', skillsCtl.index);
 
-module.exports = router;
-
+router.get('/:id', skillsCtl.show);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   //res.render(path, controller)
   res.render('index', { title: 'Developer Skills' });
 });
+
+module.exports = router;
