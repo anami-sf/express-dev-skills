@@ -2,9 +2,14 @@
 
 let skills = [
     {
-    language: 'JS',
-    description: 'Object oriented language for both front and back-end developement',
-    level: 5
+        language: 'JS',
+        description: 'Object oriented language for both front and back-end developement',
+        level: 5
+    },
+    {
+        language: 'Ruby',
+        description: 'Object oriented language for both front and back-end developement',
+        level: 4
     }
 ]
 
