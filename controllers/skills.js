@@ -12,6 +12,12 @@ const newSkill = (req, res) => {
     res.render('skills/new');
   }
 
+//????Explain this code
+const add = (req, res) => {
+    Skill.create(req.body)
+    res.ridirect('skills');
+}
+
 const show = (req, res) => {
     res.render('skills/show', {
         skill: Skill.getOne(req.params.id),
@@ -22,5 +28,6 @@ const show = (req, res) => {
 module.exports = {
     index,
     show,
-    new: newSkill
+    new: newSkill,
+    add
 }
