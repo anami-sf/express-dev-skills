@@ -8,9 +8,11 @@
     <h1>Developer Skills</h1>
     <!-- List skills -->
     <ul>
+      <!-- ??? Explaing the following line of code -->
     <% skills.forEach((skill,idx) => {%>
       <a href="/skills/<%= idx %>"><%= skill.language %></a>
     <% }); %>
   </ul>
+  <a href="skills/new">Add skill</a>
   </body>
 </html>
