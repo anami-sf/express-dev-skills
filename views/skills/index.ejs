@@ -7,6 +7,11 @@
   <body>
     <h1>Developer Skills</h1>
     <!-- List skills -->
-    <p>-Skill 1</p>
+    <ul>
+    <% skills.forEach((skill,idx) => {%>
+        <li><%= skill.language %></li>
+
+    <% }); %>
+  </ul>
   </body>
 </html>
