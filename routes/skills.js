@@ -5,7 +5,7 @@ var skillsCtl = require('../controllers/skills')
 /* GET skills listing. */
 // cb = skillsCtl.index
 router.get('/', skillsCtl.index);
-
+router.get('/new', skillsCtl.new);
 router.get('/:id', skillsCtl.show);
 
 /* GET home page. */
