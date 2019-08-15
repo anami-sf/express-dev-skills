@@ -14,7 +14,7 @@ const newSkill = (req, res) =>{
 
 const add = (req, res) => {
     Skill.create(req.body)
-    res.redirect('skills/index'); //Added index here ***
+    res.redirect('skills'); //Added index here ***
 }
 
 const show = (req, res) => {
@@ -30,3 +30,7 @@ module.exports = {
     new: newSkill,
     add,
 }
+
+
+
+
