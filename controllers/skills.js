@@ -18,6 +18,7 @@ const add = (req, res) => {
 }
 
 const remove = (req, res) => {
+    console.log(req.params.id)
     Skill.remove(req.params.id)
     res.redirect('/skills')
 }

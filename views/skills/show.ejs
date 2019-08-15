@@ -9,5 +9,9 @@
         <h2><%= skill.language %></h2>
         <h3>Level <%= skill.level %></h3>
         <h3><%= skill.description %></h3>
+        <form method="POST" action="/skills/<%= skillNum - 1 %>?_method=DELETE"
+          class="delete-form" >
+          <button type="submit">Delete Skill</button>
+        </form>
   </body>
 </html>
