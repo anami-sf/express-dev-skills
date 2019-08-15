@@ -13,8 +13,6 @@ router.post('/', skillsCtl.add)
 //Get one skill
 router.get('/:id', skillsCtl.show);
 
-/* GET home page. */
-// router.get('/index', skillsCtl.index);
 
 module.exports = router;
 
