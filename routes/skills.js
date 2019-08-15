@@ -13,11 +13,5 @@ router.post('/', skillsCtl.add)
 //Get one skill
 router.get('/:id', skillsCtl.show);
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  //res.render(path, controller)
-  res.render('index', { title: 'Developer Skills' });
-});
-
 module.exports = router;
 
