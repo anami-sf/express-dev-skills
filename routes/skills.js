@@ -13,6 +13,5 @@ router.post('/', skillsCtl.add)
 //Get one skill
 router.get('/:id', skillsCtl.show);
 
-
 module.exports = router;
 
