@@ -14,16 +14,9 @@ const newSkill = (req, res) => {
 
 //????Explain this code
 const add = (req, res) => {
-    Skill.create(req.body)
-    res.ridirect('skills');
-}
-
-const create = (req, res) => {
     console.log(req.body)
-    req.body.done = false
-    //Todo is the model, crate is a function in the Todo model
-    Todo.create(req.body)
-    res.redirect('/')
+    Skill.create(req.body)
+    res.redirect('/skills');
 }
 
 const show = (req, res) => {
@@ -38,5 +31,4 @@ module.exports = {
     show,
     new: newSkill,
     add,
-    create
 }
