@@ -14,7 +14,12 @@ const newSkill = (req, res) =>{
 
 const add = (req, res) => {
     Skill.create(req.body)
-    res.redirect('skills'); //Added index here ***
+    res.redirect('/skills')
+}
+
+const remove = (req, res) => {
+    Skill.remove(req.params.id)
+    res.redirect('/skills')
 }
 
 const show = (req, res) => {
@@ -29,6 +34,7 @@ module.exports = {
     show,
     new: newSkill,
     add,
+    remove
 }
 
 
