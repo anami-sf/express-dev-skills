@@ -32,9 +32,13 @@ const getOne = (id) => {
     return skills[id]
 }
 
+const remove = (skill) => {
+    skills.splice(skill, 1)
+}
 module.exports = {
     getAll,
     getOne,
     show,
-    create
+    create,
+    remove
 }
