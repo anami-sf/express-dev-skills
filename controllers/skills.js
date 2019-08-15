@@ -12,9 +12,7 @@ const newSkill = (req, res) => {
     res.render('skills/new');
   }
 
-//????Explain this code
 const add = (req, res) => {
-    console.log(req.body)
     Skill.create(req.body)
     res.redirect('/skills');
 }
