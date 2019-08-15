@@ -5,10 +5,23 @@ body {
 
 a {
   color: #00B7FF;
-  display: block;
+  
 }
 
 button {
   display: block;
   margin: 2vmin;
+}
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.delete-form button {
+  color: red;
+}
+
+li {
+  list-style: none;
 }

@@ -8,13 +8,13 @@ const index = (req, res) => {
     })
 }
 
-const newSkill = (req, res) => {
+const newSkill = (req, res) =>{
     res.render('skills/new');
   }
 
 const add = (req, res) => {
     Skill.create(req.body)
-    res.redirect('/skills');
+    res.redirect('skills/index'); //Added index here ***
 }
 
 const show = (req, res) => {

@@ -14,10 +14,7 @@ router.post('/', skillsCtl.add)
 router.get('/:id', skillsCtl.show);
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  //res.render(path, controller)
-  res.render('index', { title: 'Developer Skills' });
-});
+// router.get('/index', skillsCtl.index);
 
 module.exports = router;
 
