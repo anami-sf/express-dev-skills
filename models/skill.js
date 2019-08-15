@@ -24,6 +24,10 @@ const show = (req, res) => {
     })
 }
 
+const create = (skill) => {
+    skills.push(skill)
+}
+
 const getOne = (id) => {
     return skills[id]
 }
@@ -31,5 +35,6 @@ const getOne = (id) => {
 module.exports = {
     getAll,
     getOne,
-    show
+    show,
+    create
 }
